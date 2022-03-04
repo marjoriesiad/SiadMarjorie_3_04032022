@@ -1,0 +1,27 @@
+.header{
+    position: relative;
+    padding: .25rem;
+    box-shadow: 0 0 .5rem gray;
+
+    &__logo{
+        font-family: "Shrikhand", sans-serif;
+        text-align: center;
+    }
+
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 2rem;
+        height: 2rem;
+        width: 2rem;
+        font-size: 1.5rem;
+        color: #000;
+
+    }
+
+    &--arrow{
+        position: relative;
+    }
+}
