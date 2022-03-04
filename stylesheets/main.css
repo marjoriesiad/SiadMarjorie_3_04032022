@@ -592,4 +592,52 @@ body {
   font-size: 2rem;
 }
 
+.menu {
+  display: grid;
+}
+.menu__course {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+.menu__title {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+.menu__title::after {
+  content: "";
+  background-color: #99E2D0;
+  height: 0.25rem;
+  width: 3rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.menu__item {
+  display: flex;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0.25rem 0.25rem 1rem gray;
+  margin: 1rem 0;
+  cursor: pointer;
+  padding: 1rem;
+}
+.menu__content {
+  flex: 1;
+}
+.menu__name {
+  margin: 0;
+}
+.menu__description {
+  margin: 0;
+}
+.menu__price {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=main.css.map */

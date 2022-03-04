@@ -34,10 +34,65 @@
     }
 
     &__icon{
-        
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
+    }
+}
+
+.menu{
+    display: grid;
+
+    &__course{
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0 1rem;
+    }
+
+    &__title{
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: .5rem;
+        font-weight: 400;
+
+        &::after{
+            content: "";
+            background-color: #99E2D0;
+            height: .25rem;
+            width: 3rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    &__item{
+        display: flex;
+        background-color: #fff;
+        border-radius: .75rem;
+        box-shadow: .25rem .25rem 1rem gray;
+        margin: 1rem 0;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    &__content{
+        flex: 1;
+    }
+
+    &__name{
+        margin: 0;
+    }
+
+    &__description{
+        margin: 0;
+    }
+
+    &__price{
+        display: flex;
+        align-items: flex-end;
+        padding-left: .5rem;
+        font-weight: 700;
     }
 }
