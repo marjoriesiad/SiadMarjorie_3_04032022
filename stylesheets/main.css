@@ -559,4 +559,37 @@ body {
   max-height: 32rem;
 }
 
+.main {
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -4rem;
+}
+.main__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 0 1rem;
+}
+.main__title {
+  font-family: "Shrikhand", sans-serif;
+}
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  padding: 0;
+  background-color: #F6F6F6;
+}
+.main__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */

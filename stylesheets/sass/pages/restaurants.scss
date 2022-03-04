@@ -3,3 +3,41 @@
     max-width: 100%;
     max-height: 32rem;
 }
+
+.main{
+    position: relative;
+    background-color: #F6F6F6;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -4rem;
+
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem 0 1rem;
+    }
+
+    &__title{
+        font-family: "Shrikhand", sans-serif;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        padding: 0;
+        background-color: #F6F6F6;
+    }
+
+    &__icon{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+}
