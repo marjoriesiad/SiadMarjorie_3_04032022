@@ -394,4 +394,44 @@ body {
   border-radius: 100px;
 }
 
+.tutorial {
+  padding: 2rem 1rem;
+}
+.tutorial__title {
+  margin-top: 0;
+}
+.tutorial__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: listNumber;
+}
+.tutorial__step {
+  display: flex;
+  position: relative;
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem gray;
+  border-radius: 1.25rem;
+  background-color: #F6F6F6;
+}
+.tutorial__step::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  counter-increment: listNumber 1;
+  content: counter(listNumber) " ";
+  background-color: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  color: #fff;
+  position: absolute;
+  left: -0.75rem;
+}
+.tutorial__icon {
+  margin-right: 1rem;
+  color: #7E7E7E;
+}
+
 /*# sourceMappingURL=main.css.map */

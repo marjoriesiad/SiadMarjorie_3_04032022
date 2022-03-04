@@ -56,3 +56,51 @@
 
     }
 }
+
+.tutorial{
+    padding: 2rem 1rem;
+
+    &__title{
+        margin-top: 0;
+    }
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: listNumber;
+    }
+
+    &__step{
+        display: flex;
+        position: relative;
+        padding: 1.5rem;
+        margin: 1rem 0 1rem .75rem;
+        box-shadow: .25rem .25rem .5rem gray;
+        border-radius: 1.25rem;
+        background-color: #F6F6F6;
+
+        &::before{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            counter-increment: listNumber 1;
+            content: counter(listNumber) " ";
+            background-color: #9356DC;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            color: #fff;
+            position: absolute;
+            left: -.75rem;
+        }
+    }
+
+    
+    &__icon{
+        margin-right: 1rem;
+        color: #7E7E7E;
+    }
+
+
+}
