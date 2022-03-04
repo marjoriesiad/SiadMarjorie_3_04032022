@@ -21,23 +21,17 @@
         font-family: "Shrikhand", sans-serif;
     }
 
-    &__button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        height: 2rem;
-        width: 2rem;
-        border: none;
-        padding: 0;
-        background-color: #F6F6F6;
-    }
-
     &__icon{
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
     }
 }
 
