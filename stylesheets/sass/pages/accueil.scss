@@ -137,6 +137,17 @@
         height: 12rem;
     }
 
+    &__new{
+        position: absolute;
+        top: 1rem;
+        right: .75rem;
+        background-color: #99e2d0;
+        color: #1B6150;
+        padding: .5rem;
+        border-radius: .125rem;
+
+    }
+
     &__content{
         display: flex;
         align-items: center;
