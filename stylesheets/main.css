@@ -396,6 +396,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
 }
 .footer__logo {
   font-family: "Shrikhand", sans-serif;
@@ -454,6 +457,11 @@ body {
 
 .tutorial {
   padding: 2rem 1rem;
+}
+.tutorial__container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
 }
 .tutorial__title {
   margin-top: 0;
@@ -515,6 +523,11 @@ body {
   position: relative;
   text-decoration: none;
   border-radius: 1rem;
+  transition: transform 400ms;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 0.5rem gray;
 }
 .card__image {
   object-fit: cover;
@@ -628,6 +641,7 @@ body {
   margin: 1rem 0;
   cursor: pointer;
   padding: 1rem;
+  overflow: hidden;
 }
 .menu__content {
   flex: 1;
@@ -643,6 +657,55 @@ body {
   align-items: flex-end;
   padding-left: 0.5rem;
   font-weight: 700;
+}
+.menu__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 4rem;
+}
+.menu__checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 100px;
+  background-color: #fff;
+}
+.menu__green {
+  color: #99E2D0;
+}
+
+@media screen and (min-width: 1100px) {
+  .tutorial__list {
+    display: flex;
+  }
+  .tutorial__step {
+    flex: 1;
+    margin: 0 0 0 2rem;
+  }
+  .tutorial__step:first-child {
+    margin-left: 0.75rem;
+  }
+
+  .restaurant__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__logo {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  .footer__element {
+    margin: 0 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

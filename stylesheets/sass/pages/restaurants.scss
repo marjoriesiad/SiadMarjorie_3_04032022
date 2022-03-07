@@ -70,6 +70,7 @@
         margin: 1rem 0;
         cursor: pointer;
         padding: 1rem;
+        overflow: hidden;
     }
 
     &__content{
@@ -90,4 +91,29 @@
         padding-left: .5rem;
         font-weight: 700;
     }
+
+    &__check{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#99E2D0;
+        width: 4rem;
+        
+    }
+
+    &__checkIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.6rem;
+        width: 1.6rem;
+        border-radius: 100px;
+        background-color:#fff;
+
+    }
+
+    &__green{
+        color: #99E2D0;
+    } 
 }
+
