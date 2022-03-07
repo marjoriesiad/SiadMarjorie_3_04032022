@@ -2,21 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 
-@import 'abstracts/variables';
-
 
 @import 'base/normalize.scss';
 @import 'base/fonts.scss';
 
 @import 'components/button';
+@import 'components/animations';
 
 @import 'layout/header';
 @import 'layout/footer';
 
 @import 'pages/accueil.scss';
 @import 'pages/restaurants.scss';
-
-
-@import 'base/desktop.scss';
+@import 'pages/accueil-desktop.scss';
+@import 'pages/restaurants-desktop.scss';
 
 

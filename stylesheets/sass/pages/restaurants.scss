@@ -9,7 +9,9 @@
     position: relative;
     background-color: #F6F6F6;
     border-radius: 2rem 2rem 0 0;
+    margin: auto;
     margin-top: -4rem;
+    max-width: 1280px;
 
     &__content{
         display: flex;
@@ -71,6 +73,7 @@
         cursor: pointer;
         padding: 1rem;
         overflow: hidden;
+        
     }
 
     &__content{
@@ -79,11 +82,17 @@
 
     &__name{
         margin: 0;
+ 
     }
 
     &__description{
-        margin: 0;
+        margin: 0; 
     }
+ /*   &__name, &__description{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }*/
 
     &__price{
         display: flex;
@@ -98,22 +107,23 @@
         justify-content: center;
         background-color:#99E2D0;
         width: 4rem;
-        
+        margin: -1rem -5rem -1rem 1rem;
     }
-
-    &__checkIcon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 1.6rem;
-        width: 1.6rem;
-        border-radius: 100px;
-        background-color:#fff;
-
-    }
-
-    &__green{
-        color: #99E2D0;
-    } 
 }
+
+.check-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 100px;
+
+    &__icon{
+        color:#99E2D0;
+    }
+}
+
+
 

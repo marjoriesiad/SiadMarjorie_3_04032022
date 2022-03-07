@@ -4,13 +4,17 @@
     padding: 1.25rem 1rem;
     background-color: #F3F3F3;
 
+    &__form{
+        margin: auto;
+    }
+
 
     &__icon{
         margin-right: .5rem;
     }
 
     &__input{
-        width: 80%;
+        width: 50%;
         border: none;
         background-color: #F3F3F3;
         font-size: 1.1rem;

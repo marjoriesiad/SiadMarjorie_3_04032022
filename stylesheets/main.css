@@ -365,6 +365,51 @@ body {
   padding: 0.75rem 3rem;
 }
 
+@keyframes item-appear {
+  0% {
+    margin-right: -5rem;
+  }
+  30% {
+    margin-right: -4rem;
+  }
+  50% {
+    margin-right: -3rem;
+  }
+  80% {
+    margin-right: -2rem;
+  }
+  100% {
+    margin-right: -1rem;
+  }
+}
+.menu__item:hover .menu__check {
+  animation: item-appear 180ms forwards;
+}
+
+@keyframes check-rotate {
+  0% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 75deg;
+  }
+  70% {
+    rotate: 60deg;
+  }
+  80% {
+    rotate: 45deg;
+  }
+  90% {
+    rotate: 20deg;
+  }
+  100% {
+    rotate: 0;
+  }
+}
+.menu__item:hover .check-wrap__icon {
+  animation: check-rotate 0.5s forwards;
+}
+
 .header {
   position: relative;
   padding: 0.25rem;
@@ -432,11 +477,14 @@ body {
   padding: 1.25rem 1rem;
   background-color: #F3F3F3;
 }
+.city__form {
+  margin: auto;
+}
 .city__icon {
   margin-right: 0.5rem;
 }
 .city__input {
-  width: 80%;
+  width: 50%;
   border: none;
   background-color: #F3F3F3;
   font-size: 1.1rem;
@@ -587,7 +635,9 @@ body {
   position: relative;
   background-color: #F6F6F6;
   border-radius: 2rem 2rem 0 0;
+  margin: auto;
   margin-top: -4rem;
+  max-width: 1280px;
 }
 .main__content {
   display: flex;
@@ -612,6 +662,11 @@ body {
 
 .menu {
   display: grid;
+  /*   &__name, &__description{
+         white-space: nowrap;
+         text-overflow: ellipsis;
+         overflow: hidden;
+     }*/
 }
 .menu__course {
   max-width: 100%;
@@ -664,17 +719,19 @@ body {
   justify-content: center;
   background-color: #99E2D0;
   width: 4rem;
+  margin: -1rem -5rem -1rem 1rem;
 }
-.menu__checkIcon {
+
+.check-wrap {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-color: #fff;
   height: 1.6rem;
   width: 1.6rem;
   border-radius: 100px;
-  background-color: #fff;
 }
-.menu__green {
+.check-wrap__icon {
   color: #99E2D0;
 }
 
@@ -705,6 +762,12 @@ body {
   }
   .footer__element {
     margin: 0 2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
   }
 }
 
