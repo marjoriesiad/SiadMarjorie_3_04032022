@@ -710,6 +710,28 @@ body {
   color: #99E2D0;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay-1 {
+  animation: appear 1s ease;
+}
+
+.delay-2 {
+  animation: appear 1s ease;
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation: appear 1s ease;
+  animation-delay: 0.3s;
+}
+
 @media screen and (min-width: 1100px) {
   .tutorial__list {
     display: flex;
