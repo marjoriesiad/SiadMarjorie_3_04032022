@@ -51,5 +51,7 @@
 
   @keyframes blink{ /** clignotement du border-right*/
     from, to{border-color: transparent};
-    50%{border-color: gray;}
+    0%{border-color: #9356DC;}
+    30%{border-color: #99E2D0;}
+    50%{border-color: #FF79DA;}
   }

@@ -852,8 +852,14 @@ body {
   from, to {
     border-color: transparent;
   }
+  0% {
+    border-color: #9356DC;
+  }
+  30% {
+    border-color: #99E2D0;
+  }
   50% {
-    border-color: gray;
+    border-color: #FF79DA;
   }
 }
 
