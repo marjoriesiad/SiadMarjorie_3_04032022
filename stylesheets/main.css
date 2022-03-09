@@ -578,6 +578,26 @@ body {
   font-size: 2rem;
   overflow: visible;
 }
+@keyframes change-color {
+  0% {
+    stroke: 20;
+    fill: url(#heart-gradient);
+    fill-opacity: 0;
+  }
+  50% {
+    stroke: 10;
+    fill: url(#heart-gradient);
+    fill-opacity: 0.5;
+  }
+  100% {
+    stroke: none;
+    fill: url(#heart-gradient);
+    fill-opacity: 1;
+  }
+}
+.card__icon:hover {
+  animation: change-color 300ms forwards;
+}
 
 .background__image {
   object-fit: cover;
