@@ -1,1 +1,37 @@
 
+/** Apparition du "check" au survol des items **/
+@keyframes check{
+    0%{margin-right: -5rem;}
+    30%{margin-right: -4rem;}
+    50%{margin-right: -3rem;}
+    80%{margin-right: -2rem;}
+    100%{margin-right: -1rem;}
+}
+
+
+/** Apparition du menu avec délai **/
+@keyframes fading{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+.delay-1{
+    animation: fading 1s ease;
+}
+
+.delay-2{
+    animation: fading 1s ease;
+    animation-delay: 0.2s;
+}
+
+.delay-3{
+    animation: fading 1s ease;
+    animation-delay: 0.3s;
+}
+
+/** Changement de couleur du coeur au survol **/
+@keyframes change-color{
+    0%{stroke:20; fill: url(#heart-gradient); fill-opacity: 0;}
+    50%{stroke:10; fill: url(#heart-gradient); fill-opacity: 0.5;}
+    100%{stroke:none; fill: url(#heart-gradient); fill-opacity: 1;}
+}

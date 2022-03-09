@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -578,23 +579,6 @@ body {
   font-size: 2rem;
   overflow: visible;
 }
-@keyframes change-color {
-  0% {
-    stroke: 20;
-    fill: url(#heart-gradient);
-    fill-opacity: 0;
-  }
-  50% {
-    stroke: 10;
-    fill: url(#heart-gradient);
-    fill-opacity: 0.5;
-  }
-  100% {
-    stroke: none;
-    fill: url(#heart-gradient);
-    fill-opacity: 1;
-  }
-}
 .card__icon:hover {
   animation: change-color 300ms forwards;
 }
@@ -637,11 +621,6 @@ body {
 
 .menu {
   display: grid;
-  /*   &__name, &__description{
-         white-space: nowrap;
-         text-overflow: ellipsis;
-         overflow: hidden;
-     }*/
 }
 .menu__course {
   max-width: 100%;
@@ -672,15 +651,23 @@ body {
   cursor: pointer;
   padding: 1rem;
   overflow: hidden;
+  max-width: 100%;
 }
 .menu__content {
   flex: 1;
+  overflow: hidden;
 }
 .menu__name {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__description {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__price {
   display: flex;
@@ -696,6 +683,12 @@ body {
   width: 4rem;
   margin: -1rem -5rem -1rem 1rem;
 }
+.menu__item:hover .menu__check {
+  animation: check 180ms forwards;
+}
+.menu__item:hover .menu__check .check-wrap {
+  transform: rotate(0);
+}
 
 .check-wrap {
   display: flex;
@@ -705,31 +698,11 @@ body {
   height: 1.6rem;
   width: 1.6rem;
   border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.7s;
 }
 .check-wrap__icon {
   color: #99E2D0;
-}
-
-@keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.delay-1 {
-  animation: appear 1s ease;
-}
-
-.delay-2 {
-  animation: appear 1s ease;
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation: appear 1s ease;
-  animation-delay: 0.3s;
 }
 
 @media screen and (min-width: 1100px) {
@@ -765,6 +738,65 @@ body {
   .menu {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
+  }
+}
+/** Apparition du "check" au survol des items **/
+@keyframes check {
+  0% {
+    margin-right: -5rem;
+  }
+  30% {
+    margin-right: -4rem;
+  }
+  50% {
+    margin-right: -3rem;
+  }
+  80% {
+    margin-right: -2rem;
+  }
+  100% {
+    margin-right: -1rem;
+  }
+}
+/** Apparition du menu avec délai **/
+@keyframes fading {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay-1 {
+  animation: fading 1s ease;
+}
+
+.delay-2 {
+  animation: fading 1s ease;
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation: fading 1s ease;
+  animation-delay: 0.3s;
+}
+
+/** Changement de couleur du coeur au survol **/
+@keyframes change-color {
+  0% {
+    stroke: 20;
+    fill: url(#heart-gradient);
+    fill-opacity: 0;
+  }
+  50% {
+    stroke: 10;
+    fill: url(#heart-gradient);
+    fill-opacity: 0.5;
+  }
+  100% {
+    stroke: none;
+    fill: url(#heart-gradient);
+    fill-opacity: 1;
   }
 }
 
