@@ -113,13 +113,7 @@
     text-decoration: none;
     border-radius: 1rem;
     transition: transform 400ms;
-
-    &:hover{
-        transform: scale(1.02);
-        box-shadow: 0 0 .5rem gray;
-
-
-    }
+    
 
     &__image{
         object-fit: cover;
@@ -171,11 +165,15 @@
         padding: 0;
         cursor: pointer;
         position: relative;
+        fill:transparent;
+        stroke: black;
+        stroke-width: 20;
     }
 
     &__icon{
         font-size: 2rem;
+        overflow: visible;
+
     }
-
-
 }
+
