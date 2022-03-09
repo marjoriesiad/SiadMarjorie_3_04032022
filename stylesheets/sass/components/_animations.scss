@@ -35,3 +35,21 @@
     50%{stroke:10; fill: url(#heart-gradient); fill-opacity: 0.5;}
     100%{stroke:none; fill: url(#heart-gradient); fill-opacity: 1;}
 }
+
+/** animation du loader **/
+
+@keyframes loader-out{
+    100%{
+        opacity: 0;
+        z-index: -20;
+    }
+}
+  @keyframes typing{ /** effet machine à écrire **/
+    from {width: 0;}
+    to{width: 100%;}
+  }
+
+  @keyframes blink{ /** clignotement du border-right*/
+    from, to{border-color: transparent};
+    50%{border-color: gray;}
+  }
