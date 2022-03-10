@@ -1,6 +1,5 @@
 .city{
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     padding: 1.25rem 1rem;
     background-color: #F3F3F3;
 
@@ -66,9 +65,7 @@
         background-color: #F6F6F6;
 
         &::before{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             counter-increment: listNumber 1;
             content: counter(listNumber) " ";
             background-color: $primary-color;
@@ -136,8 +133,7 @@
     }
 
     &__content{
-        display: flex;
-        align-items: center;
+        @include flex-center;
         padding: 1rem;
         position: relative;
 
@@ -156,9 +152,7 @@
     }
 
     &__heart{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         height: 2rem;
         width: 2rem;
         border: none;

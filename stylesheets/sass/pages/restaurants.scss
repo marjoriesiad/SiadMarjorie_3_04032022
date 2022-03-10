@@ -25,15 +25,12 @@
     }
 
     &__icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         font-size: 2rem;
     }
 
     &__button{
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         padding: 3rem 0;
     }
 }
@@ -105,9 +102,7 @@
     }
 
     &__check{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         background-color:$tertiary-color;
         width: 4rem;
         margin: -1rem -5rem -1rem 1rem;
@@ -123,9 +118,7 @@
 }
 
 .check-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     background-color: #fff;
     height: 1.6rem;
     width: 1.6rem;

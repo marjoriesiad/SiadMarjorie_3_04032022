@@ -377,8 +377,8 @@ body {
 }
 .header__icon {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: absolute;
   left: 2rem;
   height: 2rem;
@@ -454,6 +454,7 @@ body {
 .city {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1.25rem 1rem;
   background-color: #F3F3F3;
 }
@@ -572,6 +573,7 @@ body {
 }
 .card__content {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   position: relative;
@@ -587,8 +589,8 @@ body {
 }
 .card__heart {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 2rem;
   width: 2rem;
   border: none;
@@ -640,6 +642,7 @@ body {
 .main__button {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 3rem 0;
 }
 
@@ -701,8 +704,8 @@ body {
 }
 .menu__check {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
   width: 4rem;
   margin: -1rem -5rem -1rem 1rem;
@@ -752,6 +755,7 @@ body {
   .footer__list {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 1rem 0;
   }
   .footer__element {

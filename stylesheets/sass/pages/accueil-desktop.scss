@@ -30,8 +30,7 @@
         }
 
         &__list{
-            display: flex;
-            justify-content: center;
+            @include flex-center;
             margin: 1rem 0;
         }
 
