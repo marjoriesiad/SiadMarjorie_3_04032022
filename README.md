@@ -23,14 +23,14 @@ Le brief complet se trouve ici.
 * Sur les pages de menu, il contient en plus un bouton de retour vers l'accueil
 
 ### Animations
-__ Boutons __
+__Boutons__
 * Au survol, la couleur de fond doit légèrement s'éclaircir et l'ombre portée doit être plus visible
 * Un bouton "J'aime" en forme de coeur doit se remplir progressivement au survol
 
-__ Page d'accueil __
+__Page d'accueil__
 * Un loading spinner doit apparaître pendant 1 à 3 secondes au chargement de la page d'accueil. Le design est libre mais doit rester en adéquation avec la charte graphique du site.
 
-__ Page de menu __
+__Page de menu__
 * Les plats doivent apparaître progressivement avec un léger décalage.
 * Un cloche à droite des plats doit apparaître en coulissant de la droite vers la gauche, au survol.
 * Si l'intitulé du plat est trop long, il doit être rogné avec des points de suspension.
