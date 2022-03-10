@@ -12,6 +12,7 @@ Le brief complet se trouve [ici](https://s3.eu-west-1.amazonaws.com/course.oc-st
 * Aucun framework ne doit être utilisé
 * L'utilisation de SASS est un plus
 * Aucun code CSS ne doit être appliqué 
+* Le code doit être versionné sur Github et accessible sur [Github Pages](https://marjoriesiad.github.io/SiadMarjorie_3_04032022/)
 
 ## Livrables
 
