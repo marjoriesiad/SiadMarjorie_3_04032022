@@ -2,6 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /** Apparition du "check" au survol des items **/
+@-webkit-keyframes check {
+  0% {
+    margin-right: -5rem;
+  }
+  30% {
+    margin-right: -4rem;
+  }
+  50% {
+    margin-right: -3rem;
+  }
+  80% {
+    margin-right: -2rem;
+  }
+  100% {
+    margin-right: -1rem;
+  }
+}
 @keyframes check {
   0% {
     margin-right: -5rem;
@@ -20,6 +37,14 @@
   }
 }
 /** Apparition du menu avec délai **/
+@-webkit-keyframes fading {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes fading {
   0% {
     transform: scale(0);
@@ -29,20 +54,42 @@
   }
 }
 .delay-1 {
-  animation: fading 1s ease;
+  -webkit-animation: fading 1s ease;
+          animation: fading 1s ease;
 }
 
 .delay-2 {
-  animation: fading 1s ease;
-  animation-delay: 0.2s;
+  -webkit-animation: fading 1s ease;
+          animation: fading 1s ease;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .delay-3 {
-  animation: fading 1s ease;
-  animation-delay: 0.3s;
+  -webkit-animation: fading 1s ease;
+          animation: fading 1s ease;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 /** Changement de couleur du coeur au survol **/
+@-webkit-keyframes change-color {
+  0% {
+    stroke: 20;
+    fill: url(#heart-gradient);
+    fill-opacity: 0;
+  }
+  50% {
+    stroke: 10;
+    fill: url(#heart-gradient);
+    fill-opacity: 0.5;
+  }
+  100% {
+    stroke: none;
+    fill: url(#heart-gradient);
+    fill-opacity: 1;
+  }
+}
 @keyframes change-color {
   0% {
     stroke: 20;
@@ -61,10 +108,25 @@
   }
 }
 /** animation du loader **/
+@-webkit-keyframes loader-out {
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
 @keyframes loader-out {
   100% {
     opacity: 0;
     z-index: -20;
+  }
+}
+@-webkit-keyframes typing {
+  /** effet machine à écrire **/
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 @keyframes typing {
@@ -74,6 +136,21 @@
   }
   to {
     width: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  /** clignotement du border-right*/
+  from, to {
+    border-color: transparent;
+  }
+  0% {
+    border-color: #9356DC;
+  }
+  30% {
+    border-color: #99E2D0;
+  }
+  50% {
+    border-color: #FF79DA;
   }
 }
 @keyframes blink {
@@ -174,7 +251,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -525,7 +603,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  animation: loader-out 3s forwards 1.5s;
+  -webkit-animation: loader-out 3s forwards 1.5s;
+          animation: loader-out 3s forwards 1.5s;
   z-index: 1000;
 }
 .loader__content {
@@ -538,7 +617,8 @@ body {
   white-space: nowrap;
   border-right: 0.15em solid gray;
   letter-spacing: 0.15em;
-  animation: typing 1.5s steps(40, end), blink 0.75s step-end infinite;
+  -webkit-animation: typing 1.5s steps(40, end), blink 0.75s step-end infinite;
+          animation: typing 1.5s steps(40, end), blink 0.75s step-end infinite;
 }
 
 .city {
@@ -631,7 +711,8 @@ body {
 .restaurant__cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   row-gap: 2rem;
 }
 
@@ -645,7 +726,8 @@ body {
   transition: transform 400ms;
 }
 .card__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: none;
   border-radius: 1rem 1rem 0 0;
   border: none;
@@ -696,11 +778,13 @@ body {
   overflow: visible;
 }
 .card__icon:hover {
-  animation: change-color 300ms forwards;
+  -webkit-animation: change-color 300ms forwards;
+          animation: change-color 300ms forwards;
 }
 
 .background__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   width: 100%;
   max-height: 32rem;
@@ -801,7 +885,8 @@ body {
   margin: -1rem -5rem -1rem 1rem;
 }
 .menu__item:hover .menu__check {
-  animation: check 180ms forwards;
+  -webkit-animation: check 180ms forwards;
+          animation: check 180ms forwards;
 }
 .menu__item:hover .menu__check .check-wrap {
   transform: rotate(0);
@@ -855,8 +940,7 @@ body {
 @media screen and (min-width: 1000px) {
   .menu {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
