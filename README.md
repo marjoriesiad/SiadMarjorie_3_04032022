@@ -1,4 +1,4 @@
-<p align="center> # Projet 3 - Ohmyfood"</p>
+<p align="center"> # Projet 3 - Ohmyfood"</p>
 
 Ce projet est issu de la formation OpenClassRooms "Développeur d'applications - JavaScript React". L'objectif est d'intégrer une maquette en utilisant le préprocesseur Sass puis de la dynamiser avec des animations CSS.
 Le brief complet se trouve ici.
