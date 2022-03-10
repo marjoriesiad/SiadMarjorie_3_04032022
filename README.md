@@ -15,7 +15,7 @@ Le brief complet ce trouve [ici](https://s3.eu-west-1.amazonaws.com/course.oc-st
 * L'utilisation de SASS est un plus
 * Aucun code CSS ne doit être appliqué dans les balises HTML.
 * Le code doit être versionné sur GitHub
-* Le site doit être accessible sur Github Pages ([lien](file:///C:/Users/marjo/Desktop/P3_OhMyFood/index.html))
+* Le site doit être accessible sur Github Pages ([lien](https://marjoriesiad.github.io/SiadMarjorie_3_04032022/))
 
 
 ## Livrables demandés
