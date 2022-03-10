@@ -1,7 +1,7 @@
 # <p align="center">Projet 3 - OhMyFood</p>
 
 
-Ce projet est issu de la formation OpenClassRooms "Développeur d'application - JavaScript React".
+Ce projet est issu de la formation [OpenClassRooms](https://openclassrooms.com/fr/) "Développeur d'application - JavaScript React".
 L'objectif est d'intégrer une maquette avec le prépocesseur Sass puis de la dynamiser avec des animations CSS.
 Le brief complet ce trouve [ici](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf).
 
