@@ -71,7 +71,7 @@
             align-items: center;
             counter-increment: listNumber 1;
             content: counter(listNumber) " ";
-            background-color: #9356DC;
+            background-color: $purple;
             height: 1.5rem;
             width: 1.5rem;
             border-radius: 100px;
@@ -128,7 +128,7 @@
         position: absolute;
         top: 1rem;
         right: .75rem;
-        background-color: #99e2d0;
+        background-color: $green;
         color: #1B6150;
         padding: .5rem;
         border-radius: .125rem;

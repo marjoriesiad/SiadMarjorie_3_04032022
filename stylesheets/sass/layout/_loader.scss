@@ -24,15 +24,6 @@
       letter-spacing: .15em;
       animation: typing 1.5s steps(40, end), blink .75s step-end infinite;
     }
-
-    &__anim{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      fill: pink;
-      animation: loading 3s infinite;
-      width: 10rem;  
-    }
   }
 
 

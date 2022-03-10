@@ -450,14 +450,6 @@ body {
   letter-spacing: 0.15em;
   animation: typing 1.5s steps(40, end), blink 0.75s step-end infinite;
 }
-.loader__anim {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: pink;
-  animation: loading 3s infinite;
-  width: 10rem;
-}
 
 .city {
   display: flex;
@@ -573,7 +565,7 @@ body {
   position: absolute;
   top: 1rem;
   right: 0.75rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #1B6150;
   padding: 0.5rem;
   border-radius: 0.125rem;
