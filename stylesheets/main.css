@@ -359,7 +359,7 @@ body {
   /** transition au survol */
 }
 .btn:hover {
-  box-shadow: 0.25rem 0.25rem 10px black;
+  box-shadow: 0.25rem 0.25rem 10px #464646;
   opacity: 0.9;
 }
 .btn--restaurant {
