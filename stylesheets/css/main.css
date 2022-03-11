@@ -75,34 +75,34 @@
 /** Changement de couleur du coeur au survol **/
 @-webkit-keyframes change-color {
   0% {
-    stroke: 20;
+    stroke-width: 20;
     fill: url(#heart-gradient);
     fill-opacity: 0;
   }
   50% {
-    stroke: 10;
+    stroke-width: 10;
     fill: url(#heart-gradient);
     fill-opacity: 0.5;
   }
   100% {
-    stroke: none;
+    stroke-width: 0;
     fill: url(#heart-gradient);
     fill-opacity: 1;
   }
 }
 @keyframes change-color {
   0% {
-    stroke: 20;
+    stroke-width: 20;
     fill: url(#heart-gradient);
     fill-opacity: 0;
   }
   50% {
-    stroke: 10;
+    stroke-width: 10;
     fill: url(#heart-gradient);
     fill-opacity: 0.5;
   }
   100% {
-    stroke: none;
+    stroke-width: 0;
     fill: url(#heart-gradient);
     fill-opacity: 1;
   }
