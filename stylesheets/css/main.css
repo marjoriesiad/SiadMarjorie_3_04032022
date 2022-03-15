@@ -908,7 +908,7 @@ body {
   color: #99E2D0;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) {
   .tutorial__list {
     display: flex;
   }
@@ -938,7 +938,7 @@ body {
     margin: 0 2rem;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) {
   .menu {
     grid-template-columns: repeat(3, 1fr);
     -moz-column-gap: 1rem;
