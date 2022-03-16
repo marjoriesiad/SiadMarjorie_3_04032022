@@ -39,35 +39,35 @@
 /** Apparition du menu avec délai **/
 @-webkit-keyframes fading {
   0% {
-    transform: scale(0);
+    transform: scaleY(0);
   }
   100% {
-    transform: scale(1);
+    transform: scaleY(1);
   }
 }
 @keyframes fading {
   0% {
-    transform: scale(0);
+    transform: scaleY(0);
   }
   100% {
-    transform: scale(1);
+    transform: scaleY(1);
   }
 }
 .delay-1 {
-  -webkit-animation: fading 1s forwards;
-          animation: fading 1s forwards;
+  -webkit-animation: fading 500ms linear both;
+          animation: fading 500ms linear both;
 }
 
 .delay-2 {
-  -webkit-animation: fading 1s forwards;
-          animation: fading 1s forwards;
+  -webkit-animation: fading 500ms linear both;
+          animation: fading 500ms linear both;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
 .delay-3 {
-  -webkit-animation: fading 1s forwards;
-          animation: fading 1s forwards;
+  -webkit-animation: fading 500ms linear both;
+          animation: fading 500ms linear both;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
@@ -627,6 +627,7 @@ body {
   align-items: center;
   padding: 1.25rem 1rem;
   background-color: #F3F3F3;
+  text-align: center;
 }
 .city__form {
   margin: auto;
@@ -652,6 +653,7 @@ body {
 .explore__subtitle {
   font-weight: 300;
   margin: 1.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .tutorial {
@@ -854,6 +856,7 @@ body {
   overflow: hidden;
   max-width: 100%;
   transform: scale(0);
+  transform-origin: bottom;
 }
 .menu__content {
   flex: 1;

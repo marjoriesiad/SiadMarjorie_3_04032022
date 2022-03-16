@@ -10,21 +10,21 @@
 
 /** Apparition du menu avec délai **/
 @keyframes fading{
-    0%{transform: scale(0);}
-    100%{transform: scale(1);}
+    0%{transform: scaleY(0);}
+    100%{transform: scaleY(1);}
 }
 
 .delay-1{
-    animation: fading 1s forwards;
+    animation: fading 500ms linear both;
 }
 
 .delay-2{
-    animation: fading 1s forwards;
+    animation: fading 500ms linear both;
     animation-delay: 0.2s;
 }
 
 .delay-3{
-    animation: fading 1s forwards;
+    animation: fading 500ms linear both;
     animation-delay: 0.3s;
 }
 

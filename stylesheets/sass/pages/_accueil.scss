@@ -2,6 +2,7 @@
     @include flex-center;
     padding: 1.25rem 1rem;
     background-color: #F3F3F3;
+    text-align:center;
 
     &__form{
         margin: auto;
@@ -32,6 +33,7 @@
     &__subtitle{
         font-weight: 300;
         margin: 1.5rem 0;
+        margin-bottom: 2rem;
     }
 }
 
