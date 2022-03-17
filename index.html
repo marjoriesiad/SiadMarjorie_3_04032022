@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,62 +11,72 @@
 </head>
 
 <body>
+
+    <!-- LOADER -->
     <div class="loader">
         <div class="loader__content">
-        <h1>Ohmyfood</h1>
-      </div>
-      </div>
+            <h1>Ohmyfood</h1>
+        </div>
+    </div>
+    <!-- FIN LOADER -->
 
+    <!-- HEADER -->
     <header class="header">
         <a href="index.html" class="header__logo">ohmyfood</a>
     </header>
+    <!-- FIN HEADER -->
 
 
     <main>
+        <!-- CITY FORM -->
         <section class="city">
             <form action="#" class="city__form">
                 <span class="city__icon"><i class="fas fa-map-marker-alt"></i></span>
                 <input type="search" placeholder="Paris, Belleville" class="city__input">
             </form>
         </section>
+        <!-- FIN CITY FORM -->
 
-
+        <!-- EXPLORE -->
         <section class="explore">
             <h2 class="explore__title">Réservez le menu qui vous convient</h2>
             <p class="explore__subtitle">Découvrez des restaurants d'exception, sélectionnées par nos soins</p>
             <a href="" class="btn explore__button">Explorer nos restaurants</a>
         </section>
+        <!-- FIN EXPLORE -->
 
-
+        <!-- TUTORIEL -->
         <section class="tutorial">
             <div class="tutorial__container">
-            <h2 class="tutorial__title">Fonctionnement</h2>
-            <ol class="tutorial__list">
-                <li class="tutorial__step">
-                    <i class="fas fa-mobile-alt tutorial__icon"></i>
-                    <span class="tutorial__text">Choisissez un restaurant</span>
-                </li>
+                <h2 class="tutorial__title">Fonctionnement</h2>
+                <ol class="tutorial__list">
+                    <li class="tutorial__step">
+                        <i class="fas fa-mobile-alt tutorial__icon"></i>
+                        <span class="tutorial__text">Choisissez un restaurant</span>
+                    </li>
 
-                <li class="tutorial__step">
-                    <i class="fas fa-list tutorial__icon"></i>
-                    <span class="tutorial__text">Composez votre menu</span>
-                </li>
+                    <li class="tutorial__step">
+                        <i class="fas fa-list tutorial__icon"></i>
+                        <span class="tutorial__text">Composez votre menu</span>
+                    </li>
 
-                <li class="tutorial__step">
-                    <i class="fas fa-store tutorial__icon"></i>
-                    <span class="tutorial__text">Dégustez au restaurant</span>
-                </li>
-            </ol>
-        </div>
+                    <li class="tutorial__step">
+                        <i class="fas fa-store tutorial__icon"></i>
+                        <span class="tutorial__text">Dégustez au restaurant</span>
+                    </li>
+                </ol>
+            </div>
         </section>
+        <!-- FIN TUTORIEL -->
 
-
+        <!-- RESTAURANTS -->
         <section class="restaurant">
             <div class="restaurant__container">
                 <h2 class="restaurant__title">Restaurants</h2>
                 <div class="restaurant__cards">
+                    <!-- LA PALETTE DU GOUT -->
                     <a href="la-palette-du-gout.html" class="card">
-                        <img src="images/restaurants/la-palette-du-gout.jpg" alt="#" class="card__image">
+                        <img src="images/restaurants/la-palette-du-gout.jpg" alt="Assiette de saumon avec de la salade" class="card__image">
                         <span class="card__new">Nouveau</span>
                         <div class="card__content">
                             <div class="card__text">
@@ -81,12 +92,12 @@
                                     <stop offset="100%" stop-color="#FF79DA"/>
                                   </linearGradient>
                                 </svg>
-                        </div>
+                            </div>
                         </div>
                     </a>
-
+                    <!-- LA NOTE ENCHANTEE -->
                     <a href="la-note-enchantee.html" class="card">
-                        <img src="images/restaurants/la-note-enchantee.jpg" alt="#" class="card__image">
+                        <img src="images/restaurants/la-note-enchantee.jpg" alt="Assiette de pomme de terre, sauce tomates et légumes" class="card__image">
                         <span class="card__new">Nouveau</span>
                         <div class="card__content">
                             <div class="card__text">
@@ -98,12 +109,12 @@
                                 <svg class="card__icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" version="1.1">
                                   <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                                 </svg>
-                        </div>
+                            </div>
                         </div>
                     </a>
-
+                    <!-- A LA FRANCAISE -->
                     <a href="a-la-francaise.html" class="card">
-                        <img src="images/restaurants/a-la-francaise.jpg" alt="#" class="card__image">
+                        <img src="images/restaurants/a-la-francaise.jpg" alt="Tartine avec pousses d'épinards et oeufs" class="card__image">
                         <div class="card__content">
                             <div class="card__text">
                                 <h3 class="card__title">A la française</h3>
@@ -111,15 +122,15 @@
                             </div>
 
                             <div class="card__heart">
-                                    <svg class="card__icon" viewBox="0 0 512 512">
+                                <svg class="card__icon" viewBox="0 0 512 512">
                                       <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                                     </svg>
                             </div>
                         </div>
                     </a>
-
+                    <!-- LE DELICE DES SENS -->
                     <a href="le-delice-des-sens.html" class="card">
-                        <img src="images/restaurants/le-delice-des-sens.jpg" alt="#" class="card__image">
+                        <img src="images/restaurants/le-delice-des-sens.jpg" alt="Longue assiette de poisson et de légumes" class="card__image">
                         <div class="card__content">
                             <div class="card__text">
                                 <h3 class="card__title">Le délice des sens</h3>
@@ -136,6 +147,7 @@
                 </div>
             </div>
         </section>
+        <!-- FIN RESTAURANTS -->
     </main>
 
 
@@ -145,15 +157,13 @@
             <ul class="footer__list">
                 <li class="footer__element">
                     <a href="#" class="footer__link">
-                        <i class="fas fa-utensils footer__icon"></i>
-                        Proposer un restaurant
+                        <i class="fas fa-utensils footer__icon"></i> Proposer un restaurant
                     </a>
                 </li>
 
                 <li class="footer__element">
                     <a href="#" class="footer__link">
-                        <i class="fas fa-handshake footer__icon"></i>
-                        Devenir partenaire
+                        <i class="fas fa-handshake footer__icon"></i> Devenir partenaire
                     </a>
                 </li>
 
@@ -167,6 +177,7 @@
             </ul>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
