@@ -1,9 +1,8 @@
-.header{
+.header {
     position: relative;
     padding: .25rem;
     box-shadow: 0 0 .5rem gray;
-
-    &__logo{
+    &__logo {
         @include flex-center;
         font-family: "Shrikhand", sans-serif;
         text-decoration: none;
@@ -11,8 +10,7 @@
         color: black;
         margin: 1rem 0;
     }
-
-    &__icon{
+    &__icon {
         @include flex-center;
         position: absolute;
         left: 2rem;
@@ -20,10 +18,8 @@
         width: 2rem;
         font-size: 1.5rem;
         color: #000;
-
     }
-
-    &--arrow{
+    &--arrow {
         position: relative;
     }
 }

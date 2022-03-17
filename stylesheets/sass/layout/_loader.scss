@@ -1,28 +1,21 @@
-    
-  .loader{
-    @include flex-center;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    animation: loader-out 1.3s forwards 1.5s;
-    z-index: 1000;
-
-    &__content{
-        font-family: "Shrikhand", sans-serif;
-        font-size: 20px;
+    .loader {
+        @include flex-center;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        animation: loader-out 1.3s forwards 1.5s;
+        z-index: 1000;
+        &__content {
+            font-family: "Shrikhand", sans-serif;
+            font-size: 20px;
+        }
+        & h1 {
+            margin-bottom: 2rem;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: .15em solid gray;
+            letter-spacing: .15em;
+            animation: typing 1.5s steps(40, end), blink .75s step-end infinite;
+        }
     }
-
-
-    & h1{
-      margin-bottom: 2rem;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: .15em solid gray;
-      letter-spacing: .15em;
-      animation: typing 1.5s steps(40, end), blink .75s step-end infinite;
-    }
-  }
-
-
-

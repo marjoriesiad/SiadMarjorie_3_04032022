@@ -1,25 +1,21 @@
-.btn{
+.btn {
     text-decoration: none;
-        border: none;
-        padding: 0.75rem 1.5rem;
-        font-weight: 500;
-        font-size: 1.1rem;
-        color: #fff;
-        cursor: pointer;
-        box-shadow: 0.25rem 0.25rem 10px rgb(128, 128, 128);
-        background-image: $gradient;
-        border-radius: 100px;
-        transition-duration: .25s;
-        
-        
-
-        /** transition au survol */
-        &:hover{
-            box-shadow: .25rem .25rem 10px rgb(70, 70, 70);
-            opacity: 0.9;
-        }
-
-        &--restaurant{
-            padding: .75rem 3rem;
-        }
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0.25rem 0.25rem 10px rgb(128, 128, 128);
+    background-image: $gradient;
+    border-radius: 100px;
+    transition-duration: .25s;
+    /** transition au survol */
+    &:hover {
+        box-shadow: .25rem .25rem 10px rgb(70, 70, 70);
+        opacity: 0.9;
+    }
+    &--restaurant {
+        padding: .75rem 3rem;
+    }
 }

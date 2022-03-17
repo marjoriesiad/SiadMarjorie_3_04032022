@@ -1,19 +1,15 @@
-.city{
+.city {
     @include flex-center;
     padding: 1.25rem 1rem;
     background-color: #F3F3F3;
-    text-align:center;
-
-    &__form{
+    text-align: center;
+    &__form {
         margin: auto;
     }
-
-
-    &__icon{
+    &__icon {
         margin-right: .5rem;
     }
-
-    &__input{
+    &__input {
         width: 60%;
         border: none;
         background-color: #F3F3F3;
@@ -21,42 +17,36 @@
     }
 }
 
-.explore{
+.explore {
     padding: 2rem;
     text-align: center;
     background-color: #FAFAFA;
-
-    &__title{
+    &__title {
         margin: 0;
     }
-
-    &__subtitle{
+    &__subtitle {
         font-weight: 300;
         margin: 1.5rem 0 2.5rem 0;
     }
 }
 
-.tutorial{
+.tutorial {
     padding: 2rem 1rem;
-
-    &__container{
+    &__container {
         max-width: 1200px;
         position: relative;
         margin: auto;
     }
-
-    &__title{
+    &__title {
         margin-top: 0;
     }
-
-    &__list{
+    &__list {
         margin: 0;
         padding: 0;
         list-style: none;
         counter-reset: listNumber;
     }
-
-    &__step{
+    &__step {
         display: flex;
         position: relative;
         padding: 1.5rem;
@@ -64,8 +54,7 @@
         box-shadow: .25rem .25rem .5rem gray;
         border-radius: 1.25rem;
         background-color: #F6F6F6;
-
-        &::before{
+        &::before {
             @include flex-center;
             counter-increment: listNumber 1;
             content: counter(listNumber) " ";
@@ -78,24 +67,21 @@
             left: -.75rem;
         }
     }
-
-    &__icon{
+    &__icon {
         margin-right: 1rem;
         color: #7E7E7E;
     }
 }
 
-.restaurant{
+.restaurant {
     background-color: #F6F6F6;
     padding: 2rem 1rem;
-
-    &__container{
+    &__container {
         max-width: 1280px;
         margin: auto;
         position: relative;
     }
-
-    &__cards{
+    &__cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         column-gap: 2rem;
@@ -103,7 +89,7 @@
     }
 }
 
-.card{
+.card {
     display: block;
     color: inherit;
     background-color: #fff;
@@ -111,9 +97,7 @@
     text-decoration: none;
     border-radius: 1rem;
     transition: transform 400ms;
-    
-
-    &__image{
+    &__image {
         object-fit: cover;
         box-shadow: none;
         border-radius: 1rem 1rem 0 0;
@@ -121,8 +105,7 @@
         width: 100%;
         height: 12rem;
     }
-
-    &__new{
+    &__new {
         position: absolute;
         top: 1rem;
         right: .75rem;
@@ -130,29 +113,22 @@
         color: #1B6150;
         padding: .5rem;
         border-radius: .125rem;
-
     }
-
-    &__content{
+    &__content {
         @include flex-center;
         padding: 1rem;
         position: relative;
-
     }
-
-    &__text{
+    &__text {
         flex: 1;
     }
-
-    &__title{
+    &__title {
         margin: 0 0 .25rem
     }
-
-    &__subtitle{
+    &__subtitle {
         margin: 0;
     }
-
-    &__heart{
+    &__heart {
         @include flex-center;
         height: 2rem;
         width: 2rem;
@@ -160,19 +136,15 @@
         padding: 0;
         cursor: pointer;
         position: relative;
-        fill:transparent;
+        fill: transparent;
         stroke: black;
         stroke-width: 20;
     }
-
-    &__icon{
+    &__icon {
         font-size: 2rem;
         overflow: visible;
-
     }
-
-
-    &__icon:hover{
+    &__icon:hover {
         animation: change-color 300ms forwards;
     }
 }

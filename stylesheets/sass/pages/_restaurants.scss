@@ -1,56 +1,49 @@
-.background__image{
+.background__image {
     object-fit: cover;
     max-width: 100%;
     width: 100%;
     max-height: 32rem;
 }
 
-.main{
+.main {
     position: relative;
     background-color: #F6F6F6;
     border-radius: 2rem 2rem 0 0;
     margin: auto;
     margin-top: -4rem;
     max-width: 1280px;
-
-    &__content{
+    &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 1rem 2rem 0 1rem;
     }
-
-    &__title{
+    &__title {
         font-family: "Shrikhand", sans-serif;
     }
-
-    &__icon{
+    &__icon {
         @include flex-center;
         font-size: 2rem;
     }
-
-    &__button{
+    &__button {
         @include flex-center;
         padding: 3rem 0;
     }
 }
 
-.menu{
+.menu {
     display: grid;
-
-    &__course{
+    &__course {
         max-width: 100%;
         overflow: hidden;
         padding: 0 1rem;
     }
-
-    &__title{
+    &__title {
         text-transform: uppercase;
         position: relative;
         padding-bottom: .5rem;
         font-weight: 400;
-
-        &::after{
+        &::after {
             content: "";
             background-color: $tertiary-color;
             height: .25rem;
@@ -60,8 +53,7 @@
             bottom: 0;
         }
     }
-
-    &__item{
+    &__item {
         display: flex;
         background-color: #fff;
         border-radius: .75rem;
@@ -73,53 +65,44 @@
         max-width: 100%;
         transform: scale(0);
         transform-origin: bottom;
-        
     }
-
-    &__content{
+    &__content {
         flex: 1;
         overflow: hidden;
     }
-
-    &__name{
+    &__name {
         margin: 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
- 
     }
-
-    &__description{
-        margin: 0; 
+    &__description {
+        margin: 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
-    &__price{
+    &__price {
         display: flex;
         align-items: flex-end;
         padding-left: .5rem;
         font-weight: 700;
     }
-
-    &__check{
+    &__check {
         @include flex-center;
-        background-color:$tertiary-color;
+        background-color: $tertiary-color;
         width: 4rem;
         margin: -1rem -5rem -1rem 1rem;
     }
-
-    &__item:hover &__check{
+    &__item:hover &__check {
         animation: check 180ms forwards;
-
-        .check-wrap{
+        .check-wrap {
             transform: rotate(0);
         }
     }
 }
 
-.check-wrap{
+.check-wrap {
     @include flex-center;
     background-color: #fff;
     height: 1.6rem;
@@ -127,14 +110,7 @@
     border-radius: 100px;
     transform: rotate(180deg);
     transition-duration: 0.7s;
-
-    &__icon{
+    &__icon {
         color: $tertiary-color;
     }
 }
-
-
-
-
-
-

@@ -1,56 +1,108 @@
 /** Apparition du "check" au survol des items **/
-@keyframes check{
-    0%{margin-right: -5rem;}
-    30%{margin-right: -4rem;}
-    50%{margin-right: -3rem;}
-    80%{margin-right: -2rem;}
-    100%{margin-right: -1rem;}
+
+@keyframes check {
+    0% {
+        margin-right: -5rem;
+    }
+    30% {
+        margin-right: -4rem;
+    }
+    50% {
+        margin-right: -3rem;
+    }
+    80% {
+        margin-right: -2rem;
+    }
+    100% {
+        margin-right: -1rem;
+    }
 }
 
 
 /** Apparition du menu avec délai **/
-@keyframes fading{
-    0%{transform: scaleY(0);}
-    100%{transform: scaleY(1);}
+
+@keyframes fading {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
-.delay-1{
+.delay-1 {
     animation: fading 500ms linear both;
 }
 
-.delay-2{
+.delay-2 {
     animation: fading 500ms linear both;
     animation-delay: 0.2s;
 }
 
-.delay-3{
+.delay-3 {
     animation: fading 500ms linear both;
     animation-delay: 0.3s;
 }
 
+
 /** Changement de couleur du coeur au survol **/
-@keyframes change-color{
-    0%{stroke-width:20; fill: url(#heart-gradient); fill-opacity: 0;}
-    50%{stroke-width:10; fill: url(#heart-gradient); fill-opacity: 0.5;}
-    100%{stroke-width:0; fill: url(#heart-gradient); fill-opacity: 1;}
+
+@keyframes change-color {
+    0% {
+        stroke-width: 20;
+        fill: url(#heart-gradient);
+        fill-opacity: 0;
+    }
+    50% {
+        stroke-width: 10;
+        fill: url(#heart-gradient);
+        fill-opacity: 0.5;
+    }
+    100% {
+        stroke-width: 0;
+        fill: url(#heart-gradient);
+        fill-opacity: 1;
+    }
 }
+
 
 /** animation du loader **/
 
-@keyframes loader-out{
-    100%{
+@keyframes loader-out {
+    100% {
         opacity: 0;
         z-index: -20;
     }
 }
-  @keyframes typing{ /** effet machine à écrire **/
-    from {width: 0;}
-    to{width: 100%;}
-  }
 
-  @keyframes blink{ /** clignotement du border-right*/
-    from, to{border-color: transparent};
-    0%{border-color: $primary-color;}
-    30%{border-color: $tertiary-color;}
-    50%{border-color: $secondary-color;}
-  }
+
+/** effet machine à écrire **/
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/** clignotement du border-right*/
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent
+    }
+    ;
+    0% {
+        border-color: $primary-color;
+    }
+    30% {
+        border-color: $tertiary-color;
+    }
+    50% {
+        border-color: $secondary-color;
+    }
+}
