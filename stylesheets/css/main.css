@@ -510,6 +510,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.header__logo {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+}
+
 .btn {
   text-decoration: none;
   border: none;
@@ -541,7 +549,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Shrikhand", sans-serif;
   text-decoration: none;
   font-size: 2rem;
   color: black;
@@ -574,7 +581,6 @@ body {
   margin: auto;
 }
 .footer__logo {
-  font-family: "Shrikhand", sans-serif;
   color: #fff;
   font-size: 1.2rem;
   margin: 0 0 1rem;
@@ -599,6 +605,21 @@ body {
   margin-right: 0.5rem;
 }
 
+@media screen and (min-width: 1023px) {
+  .footer__logo {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .footer__element {
+    margin: 0 2rem;
+  }
+}
 .loader {
   display: flex;
   justify-content: center;
@@ -928,20 +949,6 @@ body {
 
   .restaurant__cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer__logo {
-    text-align: center;
-    font-size: 2rem;
-  }
-  .footer__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-  }
-  .footer__element {
-    margin: 0 2rem;
   }
 }
 @media screen and (min-width: 1023px) {

@@ -1,3 +1,15 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+.header {
+    &__logo {
+        font-family: "Shrikhand", sans-serif;
+    }
+}
+
+.footer {
+    &__logo {
+        font-family: "Shrikhand", sans-serif;
+    }
+}
