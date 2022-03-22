@@ -22,11 +22,13 @@
 /** Apparition du menu avec délai **/
 
 @keyframes fading {
-    0% {
-        transform: scaleY(0);
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
     }
-    100% {
-        transform: scaleY(1);
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
