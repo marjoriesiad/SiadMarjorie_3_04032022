@@ -47,3 +47,6 @@ __Page de menu__
 * Maquette desktop à improviser
 * Site compatible avec les dernières version de Chrome et Firefox
 * Validation au W3C HTML & CSS.
+
+
+## Projet validé le 22/03/2022
