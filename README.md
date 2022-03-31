@@ -49,4 +49,4 @@ __Page de menu__
 * Validation au W3C HTML & CSS.
 
 
-## Projet validé le 22/03/2022
+### Projet validé le 22/03/2022
